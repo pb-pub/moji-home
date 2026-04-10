@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moji 暮记 — Heritage Revisited</title>
+
+  <meta name="description"
+    content="Moji: Fusing ancient heritage with modern intelligence. Home of Mandarin and Nebula platforms.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Minimalist tweaks for focus */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .platform-nav-hint {
+      position: absolute;
+      bottom: 5vh;
+      left: 8vw;
+      opacity: 0.4;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <a href="/" class="logo">
+      <span class="logo-kanji">暮记</span>
+      <span class="logo-text serif">Moji</span>
+    </a>
+    <div class="nav-links">
+      <a href="https://mandarin.moji-ch.com">Mandarin</a>
+      <a href="https://nebula.moji-ch.com">Nebula</a>
+      <a href="mailto:hello@moji-ch.com">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero: What is Moji? -->
+  <header class="section hero">
+    <img src="assets/brush.png" alt="" class="brush-stroke brush-1">
+
+    <div class="hero-content">
+      <p class="caps section-label reveal-type">Etymology & Spirit</p>
+      <h1 class="hero-title reveal-type">暮记: Twilight<br><em>Chronicles.</em></h1>
+      <p class="section-text reveal-type" style="max-width: 600px;">
+        Records of the cultural sunset. We translate the fading wisdom of tradition into the intelligence of a new digital dawn.
+      </p>
+      <div class="reveal-type" style="margin-top: 2rem; display: flex; justify-content: center;">
+        <a href="#platforms" class="btn" style="color: var(--black); border-color: var(--black);">Explore the Archive</a>
+      </div>
+    </div>
+
+
+    <div class="scroll-indicator">
+      <span class="caps" style="font-size: 0.6rem;">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Horizontal Platforms Section -->
+  <div id="platforms" class="horizontal-container">
+    <div class="horizontal-inner">
+
+      <section class="horizontal-slide bg-black">
+        <span class="slide-number">01</span>
+        <div class="split-content">
+          <p class="caps section-label">Intelligence</p>
+          <h2 class="section-title">Mandarin</h2>
+          <p class="section-text">Master Chinese through the living world. Context-aware AI guiding you through daily
+            news and cultural nuances.</p>
+          <a href="https://mandarin.moji-ch.com" class="btn">Enter Studio</a>
+        </div>
+      </section>
+
+      <section class="horizontal-slide bg-red">
+        <span class="slide-number">02</span>
+        <div class="split-content">
+          <img src="assets/nebula-logo.png" alt="Nebula Logo" class="nebula-logo">
+          <p class="caps section-label">Architecture</p>
+          <h2 class="section-title">Nebula</h2>
+          <p class="section-text">The silent architect of your career search. Intelligent automation for the modern
+            professional applicant.</p>
+          <a href="https://nebula.moji-ch.com" class="btn">Open Console</a>
+        </div>
+      </section>
+
+      <section class="horizontal-slide bg-jade" style="background: url('assets/jade.png'); background-size: cover;">
+        <div
+          style="background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); padding: 4rem; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white;">
+          <p class="caps section-label" style="color: white; opacity: 0.6;">Contact</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-text" style="margin: 0 auto 3rem;">Join the lineage of modern creators.</p>
+          <a href="mailto:hello@moji-ch.com" class="btn" style="border-color: white;">Email Us</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo logo">
+        <span class="logo-kanji">暮记</span>
+        <span class="logo-text serif">Moji</span>
+      </div>
+      <div class="footer-nav">
+        <a href="https://mandarin.moji-ch.com">MANDARIN</a>
+        <a href="https://nebula.moji-ch.com">NEBULA</a>
+        <a href="mailto:hello@moji-ch.com">CONTACT</a>
+      </div>
+      <p class="copyright">© 2026 MOJI HERITAGE REVISITED. DESIGNED FOR THE CULTURAL AVANT-GARDE.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
