@@ -9,14 +9,10 @@ WEBROOT_PATH="/var/www/moji-ch.com/html"
 
 echo "Starting deployment from $REPO_PATH to $WEBROOT_PATH..."
 
-# 1. Pull latest changes
-echo "Pulling latest changes from master..."
-git pull origin master
-
 # 2. Sync public files to webroot
 # Using rsync to efficiently copy only the necessary folders and index.html
 echo "Deploying files to webroot..."
-rsync -avz --delete \
+sudo rsync -avz --delete \
     --include='index.html' \
     --include='css/***' \
     --include='js/***' \

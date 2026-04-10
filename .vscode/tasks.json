@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Deploy to server",
+            "type": "shell",
+            "command": "ssh -A ovh 'cd moji-home && git pull && ./deploy-web.sh'",
+            "problemMatcher": []
+        }
+    ]
+}
